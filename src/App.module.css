@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+.main_section {
+  background-image: url("/assets/wavey-fingerprint.png");
+  font-family: "Archivo Black", sans-serif;
+  font-style: normal;
+}
