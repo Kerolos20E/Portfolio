@@ -4,7 +4,6 @@ A single-page developer portfolio built with a code-editor inspired design:
 a tab bar of "open files" at the top, and every section styled like a file
 in an IDE, complete with a line-number gutter.
 
-**Live demo:** _add your deployed link here_
 
 ## Tech Stack
 
