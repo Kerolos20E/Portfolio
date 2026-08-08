@@ -19,7 +19,7 @@ function About() {
           responsive & modern web apps 🚀 Open to Remote opportunities .
         </p>
         <a
-          href="/resume.pdf"
+          href="/public/CV_Kerolos_Emad.pdf"
           target="_blank"
           className="text-slate-400 leading-relaxed border border-slate-700 px-4 py-2 rounded-md mt-6 inline-block hover:border-cyan-400 hover:text-cyan-400 transition-colors"
           rel="noopener noreferrer"
