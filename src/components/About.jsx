@@ -9,7 +9,9 @@ function About() {
     <section
       id="about"
       ref={ref}
-      className={`reveal ${visible ? "show" : ""} max-w-5xl mx-auto px-6 py-20 flex`}
+      className={`reveal ${
+        visible ? "show" : ""
+      } max-w-5xl mx-auto px-6 py-20 flex`}
     >
       <Gutter lines={4} />
       <div className="flex-1">
@@ -19,7 +21,7 @@ function About() {
           responsive & modern web apps 🚀 Open to Remote opportunities .
         </p>
         <a
-          href="/CV_Kerolos_Emad.pdf"
+          href="/_Kerolos_emad_Cv_.pdf"
           target="_blank"
           className="text-slate-400 leading-relaxed border border-slate-700 px-4 py-2 rounded-md mt-6 inline-block hover:border-cyan-400 hover:text-cyan-400 transition-colors"
           rel="noopener noreferrer"
