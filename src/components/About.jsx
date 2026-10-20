@@ -17,11 +17,11 @@ function About() {
       <div className="flex-1">
         <SectionLabel tag="About" />
         <p className="text-slate-400 leading-relaxed max-w-2xl">
-          Front-End Developer | React & TypeScript Enthusiast Building
-          responsive & modern web apps 🚀 Open to Remote opportunities .
+          Front-End Developer who turns designs into clean, responsive React
+          apps. Open to remote opportunities.
         </p>
         <a
-          href="/_Kerolos_emad_Cv_.pdf"
+          href="/KerolosEmad-CV.pdf"
           target="_blank"
           className="text-slate-400 leading-relaxed border border-slate-700 px-4 py-2 rounded-md mt-6 inline-block hover:border-cyan-400 hover:text-cyan-400 transition-colors"
           rel="noopener noreferrer"

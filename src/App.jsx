@@ -1,3 +1,4 @@
+import "./portfolio-animations.css";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -6,32 +7,15 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-function GlobalStyles() {
-  return (
-    <style>{`
-      @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
-      .cursor-blink { animation: blink 1s step-end infinite; }
-      @keyframes floatSlow {
-        0%, 100% { transform: translate(0, 0); }
-        50% { transform: translate(20px, -30px); }
-      }
-      .float-slow { animation: floatSlow 8s ease-in-out infinite; }
-      @keyframes fadeUp {
-        from { opacity: 0; transform: translateY(24px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      .reveal { opacity: 0; }
-      .reveal.show { animation: fadeUp 0.7s ease-out forwards; }
-    `}</style>
-  );
-}
-
 function AmbientGlow() {
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none">
-      <div className="float-slow absolute top-10 left-1/4 w-72 h-72 bg-cyan-500 opacity-10 rounded-full blur-3xl" />
+    <div
+      aria-hidden="true"
+      className="fixed inset-0 -z-10 overflow-hidden pointer-events-none"
+    >
+      <div className="float-slow absolute top-10 left-1/4 w-48 h-48 md:w-72 md:h-72 bg-cyan-500 opacity-10 rounded-full blur-2xl md:blur-3xl" />
       <div
-        className="float-slow absolute bottom-10 right-1/4 w-72 h-72 bg-violet-500 opacity-10 rounded-full blur-3xl"
+        className="float-slow absolute bottom-10 right-1/4 w-48 h-48 md:w-72 md:h-72 bg-violet-500 opacity-10 rounded-full blur-2xl md:blur-3xl"
         style={{ animationDelay: "3s" }}
       />
     </div>
@@ -40,15 +24,16 @@ function AmbientGlow() {
 
 function Portfolio() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-200 font-sans">
-      <GlobalStyles />
+    <div className="relative isolate min-h-screen bg-slate-950 text-slate-200 font-sans">
       <AmbientGlow />
       <Nav />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

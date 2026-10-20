@@ -10,11 +10,14 @@ const SKILLS = [
   "Tailwind CSS",
   "Bootstrap",
   "React",
+  "Next.js",
   "Git",
   "GitHub",
   "REST APIs",
   "Responsive Design",
   "TanStack Query",
+  "Redux Toolkit",
+  "Axios",
 ];
 
 function Skills() {
@@ -24,7 +27,9 @@ function Skills() {
     <section
       id="skills"
       ref={ref}
-      className={`reveal ${visible ? "show" : ""} max-w-5xl mx-auto px-6 py-20 flex`}
+      className={`reveal ${
+        visible ? "show" : ""
+      } max-w-5xl mx-auto px-6 py-20 flex`}
     >
       <Gutter lines={SKILLS.length + 2} />
       <div className="flex-1">

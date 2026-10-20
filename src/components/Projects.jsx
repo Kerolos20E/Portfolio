@@ -3,35 +3,47 @@ import { useReveal } from "../hooks/useReveal";
 import Gutter from "./Gutter";
 import SectionLabel from "./SectionLabel";
 
-// Placeholder data — pass your real projects in via the `projects` prop
 const DEFAULT_PROJECTS = [
   {
-    name: "🌍 Around The World",
+    name: "⌚ Vance & Heir — The Watch Store",
     description:
-      "Explore countries by name/region with population, capital, currencies & languages, dark/light mode.",
-    tools: ["React", "Vite", "Tailwind", "CSS", "React Router", "react-select"],
-    link: "https://github.com/Kerolos20E/Around-The-World",
+      "A luxury watch e-commerce app built with React and TypeScript, using Firebase for the backend and TanStack Query for data fetching and caching.",
+    tools: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "TypeScript",
+      "CSS",
+      "Firebase",
+      "TanStack Query",
+      "React Router",
+    ],
+    link: "https://watch-store-405de.web.app/",
+    image: "../../assets/WatchStore.png",
   },
   {
     name: "👕 Stride — Clothing Store",
     description:
-      "Responsive front-end e-commerce demo with category browsing, cart, quantity updates & live totals",
+      "A responsive clothing store demo with category browsing, a shopping cart, quantity updates and live totals.",
     tools: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "SweetAlert2"],
     link: "https://github.com/Kerolos20E/E-Commerce",
+    image: "../../assets/E-commerce.png",
   },
   {
     name: "🛠️ FixHub",
     description:
-      "Home maintenance platform connecting customers with technicians — requests, direct chat, ratings & admin panel",
+      "A home maintenance platform that connects customers with technicians, featuring service requests, direct chat, ratings and an admin panel.",
     tools: ["React", "React Router", "Tailwind", "CSS"],
     link: "https://github.com/Kerolos20E/FIX-HUB",
+    image: "../../assets/FixHub.png",
   },
   {
     name: "📰 News-Feed",
     description:
-      "Modern news app delivering real-time headlines across multiple categories with a fast, responsive UI",
-    tools: ["React", "News API,", "Material UI"],
+      "A news app that delivers live headlines across multiple categories, with a fast and responsive Material UI interface.",
+    tools: ["React", "News API", "Material UI", "Axios"],
     link: "https://github.com/Kerolos20E/News-Feed",
+    image: "../../assets/NewsFeed.png",
   },
 ];
 
@@ -49,14 +61,23 @@ function Projects({ projects = DEFAULT_PROJECTS }) {
         <SectionLabel tag="Projects" />
       </div>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
         {projects.map((project) => (
           <article
             key={project.name}
             className="group rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500 transition-colors overflow-hidden"
           >
-            <div className="h-40 bg-slate-800 flex items-center justify-center">
-              <Terminal className="w-8 h-8 text-slate-600 group-hover:text-cyan-500 transition-colors" />
+            <div className="h-40 bg-slate-800 flex items-center justify-center overflow-hidden">
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={`${project.name} preview`}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              ) : (
+                <Terminal className="w-8 h-8 text-slate-600 group-hover:text-cyan-500 transition-colors" />
+              )}
             </div>
             <div className="p-5">
               <div className="flex items-center justify-between mb-2">

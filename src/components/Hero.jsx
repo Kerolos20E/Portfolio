@@ -2,7 +2,7 @@ import { useTypewriter } from "../hooks/useTypewriter";
 import Gutter from "./Gutter";
 
 function Hero() {
-  const typedRole = useTypewriter("Frontend React Developer", 60);
+  const typedRole = useTypewriter("Front-End Developer (React & Next.js)", 60);
 
   return (
     <section
