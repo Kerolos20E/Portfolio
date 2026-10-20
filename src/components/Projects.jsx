@@ -19,7 +19,7 @@ const DEFAULT_PROJECTS = [
       "React Router",
     ],
     link: "https://watch-store-405de.web.app/",
-    image: "../../assets/WatchStore.png",
+    image: "/projects/WatchStore.png",
   },
   {
     name: "👕 Stride — Clothing Store",
@@ -27,7 +27,7 @@ const DEFAULT_PROJECTS = [
       "A responsive clothing store demo with category browsing, a shopping cart, quantity updates and live totals.",
     tools: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "SweetAlert2"],
     link: "https://github.com/Kerolos20E/E-Commerce",
-    image: "../../assets/E-commerce.png",
+    image: "/projects/E-commerce.png",
   },
   {
     name: "🛠️ FixHub",
@@ -35,7 +35,7 @@ const DEFAULT_PROJECTS = [
       "A home maintenance platform that connects customers with technicians, featuring service requests, direct chat, ratings and an admin panel.",
     tools: ["React", "React Router", "Tailwind", "CSS"],
     link: "https://github.com/Kerolos20E/FIX-HUB",
-    image: "../../assets/FixHub.png",
+    image: "/projects/FixHub.png",
   },
   {
     name: "📰 News-Feed",
@@ -43,7 +43,7 @@ const DEFAULT_PROJECTS = [
       "A news app that delivers live headlines across multiple categories, with a fast and responsive Material UI interface.",
     tools: ["React", "News API", "Material UI", "Axios"],
     link: "https://github.com/Kerolos20E/News-Feed",
-    image: "../../assets/NewsFeed.png",
+    image: "/projects/NewsFeed.png",
   },
 ];
 
